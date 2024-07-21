@@ -70,6 +70,9 @@ app.get('/', (req, res) => {
 
 if (process.env.NODE_ENV !== 'test') {
     const port = process.env.PORT || 3000;
-    app.listen(port, () => console.log(`Server running on port ${port}`));
+    app.listen(port, () => {
+        console.log(`Server running at http://localhost:${port}`);
+        console.log(`API documentation available at http://localhost:${port}/api-docs`);
+    });
 }
 module.exports = app;
