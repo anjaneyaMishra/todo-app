@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "test1": "echo \"Error: no test specified\" && exit 1",
-    "test": " cross-env PORT=3001 jest"
+    "test": " cross-env PORT=3001 jest --watchAll --detectOpenHandles"
   },
   "jest": {
     "testEnvironment": "node"
