@@ -17,7 +17,7 @@ describe('Todos API', () => {
        
         const user = new User({
             username: 'squbix1',
-            password: await bcrypt.hash('squbi1', 10)
+            password: await bcrypt.hash('squbix1', 10)
         });
         await user.save();
         userId = user._id;
